@@ -13,16 +13,17 @@ public class Consola {
     public Consola(Scanner entrada) { this.entrada = entrada; }
 
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+        try (Scanner entrada = new Scanner(System.in, "UTF-8")) {
             new Consola(entrada).ejecutar();
         }
     }
     public void ejecutar() {
+        mostrarMenu();
         while (entrada.hasNextLine()) {
-            System.out.println("1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir");
             try {
                 switch (numero("Opción")) {
                     case 0: return;
+                    case 7: mostrarMenu(); break;
                     case 1:
                         inventario.registrar(new Producto(texto("Código"), texto("Nombre"),
                                 numero("Existencias iniciales"), numero("Umbral")));
@@ -51,6 +52,17 @@ public class Consola {
             }
         }
     }
+    private void mostrarMenu() {
+        System.out.println();
+        System.out.println("============================================================");
+        System.out.println("  INVENTARIO DE FERRETERÍA                          S9 RC1");
+        System.out.println("============================================================");
+        System.out.println("  1 Alta          2 Entrada          3 Salida");
+        System.out.println("  4 Existencias   5 Alertas           6 Historial");
+        System.out.println("  7 Ver menú                          0 Salir");
+        System.out.println("------------------------------------------------------------");
+    }
+
     private void mover(TipoMovimiento tipo) {
         inventario.mover(texto("Código"), tipo, numero("Unidades"));
         System.out.println("Movimiento registrado.");
