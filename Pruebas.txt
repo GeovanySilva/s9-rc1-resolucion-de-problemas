@@ -1,0 +1,63 @@
+CP01 · Alta y código duplicado
+Entradas: 1 | F01 | Tornillos | 10 | 4 | 1 | f01 | Otro | 2 | 1 | 4 | 0
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: Código: Nombre: Existencias iniciales: Umbral: Producto registrado.
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: Código: Nombre: Existencias iniciales: Umbral: Error: Código duplicado.
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: F01 | Tornillos | existencias: 10 | umbral: 4
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: 
+
+CP02 · Salida y alerta de reposición
+Entradas: 1 | F01 | Tornillos | 10 | 4 | 3 | F01 | 6 | 5 | 6 | 0
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: Código: Nombre: Existencias iniciales: Umbral: Producto registrado.
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: Código: Unidades: Movimiento registrado.
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: F01 | Tornillos | existencias: 4 | umbral: 4
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: 2026-11-22T17:30:39.046820500 | F01 | SALIDA | 6 | saldo: 4
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: 
+
+CP03 · Rechazo de salida sin existencias
+Entradas: 1 | F01 | Tornillos | 10 | 4 | 3 | F01 | 11 | 4 | 6 | 0
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: Código: Nombre: Existencias iniciales: Umbral: Producto registrado.
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: Código: Unidades: Error: Existencias insuficientes.
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: F01 | Tornillos | existencias: 10 | umbral: 4
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: 1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: 
+
+CP04 · Entrada y recuperación de existencias
+Entradas: 1 | F01 | Tornillos | 4 | 4 | 2 | F01 | 3 | 5 | 6 | 0
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: Código: Nombre: Existencias iniciales: Umbral: Producto registrado.
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: Código: Unidades: Movimiento registrado.
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: Sin alertas.
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: 2026-11-22T17:30:39.268790600 | F01 | ENTRADA | 3 | saldo: 7
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: 
+
+CP05 · Validación de datos de movimiento
+Entradas: 1 | F01 | Tornillos | 10 | 4 | 2 | F02 | 1 | 3 | F01 | 0 | 3 | F01 | x | 4 | 0
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: Código: Nombre: Existencias iniciales: Umbral: Producto registrado.
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: Código: Unidades: Error: Producto inexistente.
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: Código: Unidades: Error: La cantidad debe ser positiva.
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: Código: Unidades: Error: Ingrese un número entero.
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: F01 | Tornillos | existencias: 10 | umbral: 4
+1 Alta | 2 Entrada | 3 Salida | 4 Existencias | 5 Alertas | 6 Historial | 0 Salir
+Opción: 
